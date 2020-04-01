@@ -16,8 +16,15 @@ Nuxt playground - build a simple mobile web to convert currencies
 - Use component (until the smallest component is better)
 - Use state and props
 - Use event handling and emitted event
-- etc with your creativity
 - Push this project to your github (from the first commit)
+- etc with your creativity
+
+## Stages
+### First stage
+Create your dummy data for currencies list with the exchange rate. Then push with branch name (feature/dummy-data).
+
+### Final stage
+Integrate your apps with the [Exhange Rate API](https://exchangeratesapi.io/). Then push with branch name (feature/integrate-api).
 
 ## Resources
 - [Nuxt.js](https://nuxtjs.org/)
