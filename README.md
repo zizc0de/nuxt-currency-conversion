@@ -7,6 +7,7 @@ Nuxt playground - build a simple mobile web to convert currencies
 - Display a minimum of three currencies with the results of the conversion based on primary currency (ex: USD).
 - Can Add currencies and automatically converted.
 - Can Remove currency from the list, but can't all be deleted.
+- etc with your creativity
 
 ### Rules
 - Use vue lifecycle
@@ -14,7 +15,8 @@ Nuxt playground - build a simple mobile web to convert currencies
 - Use page
 - Use component (until the smallest component is better)
 - Use state and props
-- Use event handling, emitted event
+- Use event handling and emitted event
+- etc with your creativity
 
 ## Resources
 - [Nuxt.js](https://nuxtjs.org/)
