@@ -17,7 +17,7 @@ Nuxt playground - build a simple mobile web to convert currencies
 - Use state and props
 - Use event handling and emitted event
 - etc with your creativity
-- Push this project in your github (from the first commit)
+- Push this project to your github (from the first commit)
 
 ## Resources
 - [Nuxt.js](https://nuxtjs.org/)
