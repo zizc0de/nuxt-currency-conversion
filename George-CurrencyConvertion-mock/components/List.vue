@@ -20,19 +20,6 @@
       </ul>
     </ul>
     <br>
-    <br>
-    <div v-if="choiceList.length > 0" class="dropdown">
-      <button class="dropbtn">
-        Add More
-      </button>
-      <div class="dropdown-content">
-        <div v-for="(value, index) of choiceList" :key="index">
-          <button @click="addDisplayCurrency(value)">
-            {{ value }}
-          </button>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 

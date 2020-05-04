@@ -7,6 +7,7 @@
       <div class="dropdown">
         <button class="dropbtn">
           {{ selectedCurrency }}
+          <i class="arrow down"></i>
         </button>
         <div class="dropdown-content">
           <div v-for="(value, index) of currencyDataList" :key="index">
@@ -69,7 +70,20 @@ export default {
   width: 32px;
 }
 
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 .amount-input-field {
+  text-align: right;
   display: inline-block;
   width: 100%;
   padding-top: 8px;
@@ -77,11 +91,14 @@ export default {
 }
 
 .dropbtn {
+  text-align: left;
   cursor: pointer;
   display: inline-block;
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -93,12 +110,14 @@ export default {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content-style {
+  text-align: left;
   display: block;
   width: 100%;
 }
 
 .dropdown-content {
   display: none;
+  text-align: left;
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -109,7 +128,7 @@ export default {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: block;
 }

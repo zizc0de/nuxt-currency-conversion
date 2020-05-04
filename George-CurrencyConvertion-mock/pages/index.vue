@@ -8,6 +8,7 @@
       :amount="userInput"
       @emitRawData="updateCurrencyDataList"
     />
+    <CurrencyAdder />
   </div>
 </template>
 
@@ -15,12 +16,14 @@
 import List from '~/components/List.vue'
 import Navbar from '~/components/Navbar.vue'
 import CountryAmountPicker from '~/components/CountryAmountPicker.vue'
+import CurrencyAdder from '~/components/CurrencyAdder.vue'
 
 export default {
   components: {
     List,
     Navbar,
-    CountryAmountPicker
+    CountryAmountPicker,
+    CurrencyAdder
   },
   data () {
     return {
