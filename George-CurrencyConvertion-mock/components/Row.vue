@@ -1,7 +1,7 @@
 <template>
   <div class="rowContained">
     <div class="container">
-      <div class="rowContained">
+      <div class="innerContainer">
         <div class="container">
           <div class="topLeft">
             <h4>{{ currency }}</h4>
@@ -11,8 +11,8 @@
           </div>
         </div>
         {{ currency }} - {{ currencyName }}
-        <br>
-        1 {{ current }} = {{ currency }} {{ rate }}
+        <br />
+        <h6>1 {{ current }} = {{ currency }} {{ rate }}</h6>
       </div>
       <div class="removeButton">
         <button @click="removeCurrency">
@@ -65,9 +65,20 @@ export default {
   text-align: left;
 }
 
+.innerContainer {
+  width: 100%;
+  display: flexbox;
+}
+
 .rowContained {
   width: 100%;
   display: flexbox;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
 }
 
 .topLeft {
@@ -95,17 +106,5 @@ export default {
   align-items: center;
   text-align: center;
   padding: 4pt;
-}
-.leftBox {
-  float: left;
-  align-items: flex-start;
-  justify-content: left;
-  text-align: left;
-}
-.rightBox {
-  float: right;
-  align-items: flex-end;
-  justify-content: right;
-  text-align: right;
 }
 </style>

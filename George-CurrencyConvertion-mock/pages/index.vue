@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import List from '~/components/List.vue'
-import Navbar from '~/components/Navbar.vue'
-import CountryAmountPicker from '~/components/CountryAmountPicker.vue'
-import CurrencyAdder from '~/components/CurrencyAdder.vue'
+import List from "~/components/List.vue";
+import Navbar from "~/components/Navbar.vue";
+import CountryAmountPicker from "~/components/CountryAmountPicker.vue";
+import CurrencyAdder from "~/components/CurrencyAdder.vue";
 
 export default {
   components: {
@@ -25,30 +25,28 @@ export default {
     CountryAmountPicker,
     CurrencyAdder
   },
-  data () {
+  data() {
     return {
       data: [],
-      currencyDataList: ['USD', 'IDR'],
+      currencyDataList: ["USD", "IDR"],
       userInput: 1,
-      selectedCurrency: 'USD'
-    }
+      selectedCurrency: "USD"
+    };
   },
   methods: {
-    updateCurrencyDataList (incomingData) {
+    updateCurrencyDataList(incomingData) {
       for (const key in incomingData.rates) {
         if (!this.currencyDataList.includes(key)) {
-          this.currencyDataList.push(key)
+          this.currencyDataList.push(key);
         }
       }
-      this.currencyDataList.sort()
+      this.currencyDataList.sort();
     },
-    updateSelectedCurrency (data) {
-      this.selectedCurrency = data
+    updateSelectedCurrency(data) {
+      this.selectedCurrency = data;
     }
   }
-}
+};
 </script>
 
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>

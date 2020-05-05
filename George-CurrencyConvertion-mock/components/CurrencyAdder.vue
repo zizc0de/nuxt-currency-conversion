@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <div v-if="isSelectMode == false">
+      <br />
+      <br />
       <button @click="openChoice()" class="OpenSelect">
-        Add More
+        + Add More Currency
       </button>
     </div>
     <div v-if="isSelectMode == true">
